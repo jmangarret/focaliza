@@ -13,14 +13,14 @@ p {
 a {
   color: #c60000; }
   a.active, a:active, a:focus, a:hover {
-    color: #c60000; }
+    color: #fff; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {  
+h6 {
   font-weight: 700;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
@@ -70,27 +70,27 @@ body {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: #c60000;
+    color: white;
     border: 0;
     /*background-color: #c60000;*/
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   #mainNav .navbar-brand {
-    color: #FFF;
+    /*color: #c60000;*/
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #212529; 
+    /*  color: #FE2E2E; */
     }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: #FFF;
+    color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #C60000; 
+      color: #fff; 
       font-weight: bold;
       font-size: 95%;
     }
@@ -115,10 +115,8 @@ body {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #212529;      
-
+      background-color: #c60000;      
        }
-
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
@@ -472,8 +470,8 @@ section#contact {
       height: auto; }
     section#contact .form-group textarea.form-control {
       height: 236px; }
-  section#contact .form-control:focus, .form-control:hover {
-    border:2px solid #c60000;
+  section#contact .form-control:focus {
+    border-color: #c60000;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
