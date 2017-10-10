@@ -21,7 +21,17 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+    <link href="bootstrap-touch-slider.css" rel="stylesheet" media="all">
+
+<!-- Font Awesome 
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- html5tooltips Styles & animations -->
+    <link href="css/html5tooltips.css" rel="stylesheet">
+    <link href="css/html5tooltips.animation.css" rel="stylesheet">
 
   </head>
 
@@ -38,20 +48,37 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Clientes</a>
+              <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
+              <ul>
+                <li><a href="#quienessomos">Quienes Somos</a></li>
+                <li><a href="#vision">Visi&oacute;n</a></li>
+                <li><a href="#mision">Misi&oacute;n</a></li>
+                <li><a href="#team">Staff</a></li>
+                <li><a href="#alianzas">Alianzas</a></li>
+              </ul>              
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Staff</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
+              <ul>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#tecnicas">T&eacute;cnicas</a></li>
+                <li><a href="#tecnologia">Tecnolog&iacute;a</a></li>
+                <li><a href="#infraestructura">Infraestructura</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Experiencias</a>
+              <ul>
+                <li><a href="#portfolio">Clientes</a></li>
+                <li><a href="#portfolio">Categorias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Noticias</a>
             </li>            
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#alianzas">Alianzas</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Cont&aacute;ctenos</a>
             </li>
@@ -62,152 +89,84 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container">
-        <div class="intro-text">          
-          <div class="intro-heading">Focaliza</div>
-          <div class="intro-lead-in">Inteligencia de Mercado!</div>
-          <a class="btn btn-xl js-scroll-trigger" href="#services">Saber mas...</a>
-        </div>
+      <div class="">
+        <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Third Slide -->
+                <div class="item active">
+
+                    <!-- Slide Background -->
+                    <img src="img/slide3.jpg" alt="Focaliza Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_left">
+                                <h1 data-animation="animated zoomInRight">Focaliza SRL</h1>
+                                <p data-animation="animated fadeInLeft">Inteligencia de Mercado...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Second Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="img/slide2.jpg" alt="Focaliza Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Te ayudamos a obtener las respuestas que necesitas</h1>
+                        <p data-animation="animated lightSpeedIn">Para tomar decisiones estrat&eacute;gicas...</p>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Third Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="img/slide6.jpg" alt="Focaliza Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInLeft">Con m&aacute;s de 15 años de experiencia</h1>
+                        <p data-animation="animated fadeInRight">En el campo de investigaci&oacute;n de mercados...</p>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div> <!-- End  bootstrap-touch-slider Slider -->
       </div>
     </header>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Servicios</h2>
-            <h3 class="section-subheading text-muted">Cubrimos diversas &aacute;reas tem&aacute;ticas...</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-3">
-            <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">An&aacute;lisis del target</h4>
-            <p class="text-muted">Investigamos targets comerciales.</p>
-          </div>
-          <div class="col-md-3">
-            <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Marcas y Productos</h4>
-            <p class="text-muted">Analizamos marcas, productos o servicios encontrando insights.</p>
-          </div>
-          <div class="col-md-3">
-            <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">An&aacute;lisis de mercado</h4>
-            <p class="text-muted">Ofrecemos soluciones para conocer y parametrizar sectores espec&iacute;ficos</p>
-          </div>          
-          <div class="col-md-3">
-            <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Estudios Sociales</h4>
-            <p class="text-muted">Recolectamos informaci&oacute;n en el entorno para analizar e interpretar temáticas sociales de diversos &iacute;ndoles</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Clientes</h2>
-            <h3 class="section-subheading text-muted">Durante los últimos años Focaliza ha analizado el mercado de consumidores de diferentes sectores.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Alimentos</h4>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Bebidas</h4>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Telecomunicaciones</h4>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Instituciones Financieras</h4>              
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Laboratorios Farmaceuticos</h4>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Limpieza y Cuidado Personal</h4>              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- About -->
     <section id="about">
@@ -221,39 +180,39 @@
         <div class="row">
           <div class="col-lg-12">
             <ul class="timeline">
-              <li>
+              <li id="quienessomos">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">                    
-                    <h4 class="subheading">Focaliza SRL</h4>
+                    <h4 class="subheading">Qui&eacute;nes Somos</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Es una empresa especializada en el mercado de la investigación en áreas de consumo, marca y opinión pública. Desde 1999 realizamos análisis de mercados brindando información útil para la toma de decisiones en los segmentos de opinión pública, tecnología, medio, sociedad, consumo y finanzas.</p>
+                    <p class="text-muted">Focaliza SRL, es una empresa especializada en el mercado de la investigación en áreas de consumo, marca y opinión pública. Desde 1999 realizamos análisis de mercados brindando información útil para la toma de decisiones en los segmentos de opinión pública, tecnología, medio, sociedad, consumo y finanzas.</p>
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
+              <li class="timeline-inverted" id="vision">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">                    
-                    <h4 class="subheading">Nuestra visión</h4>
+                    <h4 class="subheading">Nuestra Visi&oacute;n</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Brindar información caracterizada por la más alta rigurosidad técnica en la planificación, recolección de información, procesamiento e interpretación de datos asegurándonos que los resultados reflejen la realidad estudiada.</p>
                   </div>
                 </div>
               </li>
-              <li>
+              <li id="mision">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="subheading">Nuestra misión</h4>
+                    <h4 class="subheading">Nuestra Misi&oacute;n</h4>
                       
                   </div>
                   <div class="timeline-body">
@@ -263,7 +222,7 @@
               </li>
 
               <li class="timeline-inverted">
-                <div class="timeline-image">
+                <div class="timeline-image end">
                   <h4>Se Parte
                     <br>de Nuestra
                     <br>Historia!</h4>
@@ -275,7 +234,7 @@
       </div>
     </section>
 
-    <!-- Team -->
+        <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
@@ -386,10 +345,200 @@
       </div>
     </section>
 
-    <!-- Mapa -->    
+    <!-- Services -->
+    <section id="services">
+      
+      <div class="container" id="estudios">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Estudios</h2>
+            <h3 class="section-subheading text-muted">Cubrimos diversas &aacute;reas tem&aacute;ticas.</h3>
+          </div>
+        </div>        
+        <div class="row text-center">
+          <div class="col-md-3">
+            <span class="fa-stack fa-3x" style="cursor: pointer;" 
+            data-tooltip="  <li>Estudios de satisfacción al cliente
+                            <li>Notoriedad de la marca en targets concretos
+                            <li>Experiencia del cliente / cliente incógnito
+                            <li>Estudios de segmentación
+                            <li>Estilos de vida" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+            <img src="icons/icono_analisisTarget.svg">
+            </span>
+            <h4 class="service-heading">An&aacute;lisis del target</h4>
+            <p class="text-muted">Investigamos targets comerciales.</p>            
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-3x" style="cursor: pointer;" 
+            data-tooltip="  <li>Test de concepto
+                            <li>Test de comunicación
+                            <li>Pre y post test publicitarios
+                            <li>Valor / percepción / notoriedad de marca
+                            <li>Calidad de servicios
+                            <li>Brand essence
+                            <li>Estudios de imagen y posicionamiento
+                            <li>Evaluación de empaques
+                            <li>Evaluación de promociones
+                            <li>Pruebas de producto" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">  
+              <img src="icons/icono_analisisMarcaProducto.svg">
+            </span>
+            <h4 class="service-heading">Marcas y Productos</h4>
+            <p class="text-muted">Analizamos marcas, productos o servicios encontrando insights.</p>
+          </div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-3x" style="cursor: pointer;" 
+            data-tooltip="  <li>Estudio de base
+                            <li>Tracking
+                            <li>Análisis / caracterización sectorial" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+              <img src="icons/icono_analisisMercado.svg">
+            </span>
+            <h4 class="service-heading">An&aacute;lisis de mercado</h4>
+            <p class="text-muted">Ofrecemos soluciones para conocer y parametrizar sectores espec&iacute;ficos</p>
+          </div>          
+          <div class="col-md-3">
+            <span class="fa-stack fa-3x"  style="cursor: pointer;" 
+            data-tooltip="  <li>Temas de actualidad
+                            <li>Estudios de opinión
+                            <li>Empleo
+                            <li>Colectivos (amas de casa, jóvenes, tercera edad, niños, etc.)
+                            <li>Educación
+                            <li>Salud" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+              <img src="icons/icono_estudiosSociales.svg">
+            </span>
+            <h4 class="service-heading">Estudios Sociales</h4>
+            <p class="text-muted">Recolectamos informaci&oacute;n en el entorno para analizar e interpretar temáticas sociales de diversos &iacute;ndoles</p>
+          </div>
+        </div>        
+      </div>
+
+      <div class="container" id="tecnicas">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">T&eacute;cnicas</h2>
+            <h3 class="section-subheading text-muted">Empleamos diversas técnicas, y elegimos los mejores recursos para lograr análisis completos y rigurosos.
+            </h3>
+          </div>
+        </div>        
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x"  style="cursor: pointer;" 
+            data-tooltip="<li>Grupos focales
+                          <li>Microsesiones / triadas
+                          <li>Entrevistas grupales
+                          <li>Grupos de cocreación
+                          <li>Entrevistas en profundidad 
+                          <li>Estudios etnográficos
+                          <li>Seudocompra o Mystery Shopping" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+              <img src="icons/icono_tecCualitativas.svg">
+            </span>
+            <h4 class="service-heading">T&eacute;cnicas Cualitativas</h4>
+            <p class="text-muted">Permiten profundizar en las percepciones, conductas, emociones y descubrir insights más complejos.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x"  style="cursor: pointer;" 
+            data-tooltip="<li>Encuestas Personales
+                          <li>Encuestas On-line
+                          <li>Encuestas Autoadministradas
+                          <li>Paneles
+                          <li>Mail
+                          <li>CATI
+                          <li>Técnicas Ad-hoc" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+              <img src="icons/icono_tecCuantitativas.svg">
+            </span>
+            <h4 class="service-heading">Técnicas Cuantitativas</h4>
+            <p class="text-muted">Permiten detectar variables clave ofreciendo información generalizable.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;" 
+            data-tooltip="<li>Identificación
+                          <li>Localización
+                          <li>Extración y Análisis de Información" 
+            data-tooltip-maxwidth="200" data-tooltip-animate-function="scalein" data-tooltip-color="rouge">              
+              <img src="icons/icono_estudiosGabinete.svg">
+            </span>
+            <h4 class="service-heading">Estudios de Gabinete</h4>
+            <p class="text-muted">Identificamos, localizamos, extraemos y analizamos informaci&oacute;n disponible en diversos medios</p>
+          </div>
+        </div>        
+      </div>
+
+      <div class="container" id="tecnologia">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Tecnolog&iacute;a</h2>
+            <h3 class="section-subheading text-muted">Tenemos el equipamiento tecnológico necesario para el desarrollo de las investigaciones. 
+            </h3>
+          </div>
+        </div>        
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_tecnologia.svg">
+            </span>
+            <h4 class="service-heading">Tecnolog&iacute;a 01</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus. </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_tecnologia.svg">
+            </span>
+            <h4 class="service-heading">Tecnolog&iacute;a 02</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus. </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_tecnologia.svg">
+            </span>
+            <h4 class="service-heading">Tecnolog&iacute;a 03</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus. </p>
+          </div>
+        </div>        
+      </div>
+      <p><br></p>
+      <div class="container" id="infraestructura">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Infraestructura</h2>
+            <h3 class="section-subheading text-muted">Nuestras oficinas se encuentran en las ciudades de Santa Cruz de la Sierra, La Paz y Cochabamba, donde contamos con la infraestructura necesaria para el desarrollo de las investigaciones.</h3>
+          </div>
+        </div>        
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_infraestructura.svg">
+            </span>
+            <h4 class="service-heading">Infraestructura 01</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus. </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_infraestructura.svg">
+            </span>
+            <h4 class="service-heading">Infraestructura 02</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus. </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-3x" style="cursor: pointer;">              
+              <img src="icons/icono_infraestructura.svg">
+            </span>
+            <h4 class="service-heading">Infraestructura 03</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, mollis vitae metus pede lobortis. Labore dolor fusce, ante luctus lorem nec fusce integer tellus.</p>
+          </div>
+        </div>        
+      </div>
+
+    </section>
+
+
+<!-- Mapa 
     <section class="py-5">
       <div class="container">
-
         <div class="row">
           <div class="col-lg-12 text-center">            
             <h2 class="section-heading">Experiencia</h2>
@@ -405,6 +554,98 @@
         </div>
       </div>
     </section>
+-->    
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Clientes</h2>
+            <h3 class="section-subheading text-muted">Durante los últimos años Focaliza ha analizado el mercado de consumidores de diferentes sectores.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Alimentos</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="icons/icono_bebidas.svg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Bebidas</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Telecomunicaciones</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="icons/icono_instFinanciera.svg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Instituciones Financieras</h4>              
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="icons/icono_laboratorios.svg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Laboratorios Farmaceuticos</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Limpieza y Cuidado Personal</h4>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
@@ -412,20 +653,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Cont&aacute;ctenos</h2>
-            <h3 class="section-subheading text-muted">
-            <font color="#fed136">
-              Santa Cruz Calle Córdoba Nro. 27 - Equipetrol
-              Teléfonos: 3426256 – 3703559            
-            <br>
-            <br>
-              La Paz  Av. 16 de Julio Nro. 1800 Edificio Cosmos piso 8, El Prado
-              Teléfonos: 2311283 – 2313016            
-            <br>
-            <br>
-              Cochabamba Av. La Calancha N°1265 zona Cala Cala, Edificio Brenda piso 1
-              Teléfono: 4141217
-            </font>
-            </h3>
+
           </div>
         </div>
         <div class="row">
@@ -442,15 +670,50 @@
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Telf. *" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
                     <textarea class="form-control" id="message" placeholder="Mensaje *" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
+                </div>
+                <div class="col-md-6">                                        
+                    <div class="form-group">
+                      <h4 class="section-heading">
+                        <i class="fa fa-address-card-o"></i>
+                        Santa Cruz
+                      </h4>
+                    </div>
+                    <div class="form-group">
+                      <span class="white">
+                        <i class="fa fa-address-book-o"></i> Calle Córdoba Nro. 27 - Equipetrol.
+                        <br><i class="fa fa-phone"></i> Teléfono(s): 3426256 – 3703559            
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <h4 class="section-heading">
+                        <i class="fa fa-address-card-o"></i>
+                        La Paz 
+                      </h4>
+                    </div>
+                    <div class="form-group">
+                      <span class="white">
+                      <i class="fa fa-address-book-o"></i> Av. 16 de Julio Nro. 1800 Edificio Cosmos, Piso 8, El Prado.
+                      <br><i class="fa fa-phone"></i> Teléfono(s): 2311283 – 2313016             
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <h4 class="section-heading">
+                        <i class="fa fa-address-card-o"></i>
+                        Cochabamba 
+                      </h4>
+                    </div>                                   
+                    <div class="form-group">
+                      <span class="white">
+                      <i class="fa fa-address-book-o"></i> Av. La Calancha N°1265, Zona Cala Cala, Edificio Brenda, Piso 1.
+                      <br><i class="fa fa-phone"></i> Teléfono(s): 4141217                    
+                      </span>
+                    </div>
+
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
@@ -677,11 +940,13 @@ Y también realizamos investigaciones en la categoría de belleza y cuidado pers
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript 
+    <script src="vendor/jquery/jquery.min.js"></script>    
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    -->
+    <script src="vendor/popper/popper.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -691,6 +956,14 @@ Y también realizamos investigaciones en la categoría de belleza y cuidado pers
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <!-- Custom scripts for html5tooltip -->
+    <script src="js/html5tooltips.js"></script>    
+    <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>    
+    <script src="bootstrap-touch-slider.js"></script>
+    <script type="text/javascript">
+      $('#bootstrap-touch-slider').bsTouchSlider();
+    </script>
 
   </body>
 

@@ -30,8 +30,10 @@
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");      
+      $(".nav-link").addClass("navbar-shrink");      
     } else {
       $("#mainNav").removeClass("navbar-shrink");      
+      $(".nav-link").addClass("navbar-shrink");      
     }
   });
 

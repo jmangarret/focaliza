@@ -1,0 +1,23 @@
+Template 1
+http://treavi.com/focaliza/index2.html
+
+Template 2
+http://treavi.com/focaliza/index3.html
+
+Template 3
+http://treavi.com/focaliza/index4.html
+
+Requerimientos para V1.0:
+1) Imagenes para el slider principal con las siguientes caracteristicas:
+Tamaño: 940x627 o proporcionalmente mas grande.
+Tono oscuro para resaltar contenido.
+
+2) Texto asociado a cada una de las imagenes del slider principal.
+
+3) En caso de requerir un carrusel para alguna seccion: nosotros, servicios, alianzas, experiencias; las imagenes deben ser:
+Tamaño: 700x400 
+
+4) Fotos del Stack y descripcion.
+
+5) Logo en fondo rojo, letras blancas o fondo blanco letras rojas o ambas fondo trasnparente. segun gusto del template
+
